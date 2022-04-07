@@ -1,0 +1,23 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("backgroundimage.jpg");
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+  h1{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    text-align: center;
+    margin: 1px;
+    border: 1px;
+
+
+
+}
+#button1{
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Side Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./financeManagerMain.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+   
+
+    <h1>Finance Manager page</h1>
+
+    <input id="logoutbutton" type=button onClick="parent.location='index.html'" value='Logout'>
+
+    <div class="container">
+
+     <div id="buttons1";>
+
+        <form>
+            <input onclick="viewAllTickets(this.id)" value="View All Reimbursements" id="viewall" type="submit" class="btn btn-1"></input>
+            <input onclick="viewAllApproved(this.id)" value="Filter by Approved" id="approved" type="submit" class="btn btn-2"></input>
+            <input onclick="viewAllPending(this.id)" value="Filter by pending" id="pending" type="submit" class="btn btn-2"></input>
+            <input onclick="viewAlldDenied(this.id)" value="Filter by Rejected" id="denied" type="submit" class="btn btn-2"></input>
+
+        </form>
+
+
+  
+      
+ 
+        <div class='reimbursementHistory'></div>
+        
+      
+    </div>
+
+    <form>
+        <div class="form-outline mb-4">
+          <input type="number" id="id_input" placeholder="ID" class="form-control" />
+    
+        <button onclick="acceptReimbursement(this.id)" id="accept" type="submit" class="btn btn-5">accept</button>
+        <button onclick="rejectReimbursement(this.id)" id="deny" type="submit" class="btn btn-5">deny</button>
+    
+    </div>
+
+    </form>
+
+
+
+
+
+  <script src="./financeManagerMain.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Side Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./createReimbursement.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+    <input id="logoutbutton" type="button" value="&lt- Back" onclick="history.back()">
+    <input id="logoutbutton" type=button onClick="parent.location='index.html'" value='Logout'>
+ 
+
+
+    <form id="reimb_form">
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+    
+      
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" >Amount</label>
+          <input type="number" id="user_amountInput" placeholder="Amount Input" class="form-control" />
+        </div>
+
+        <div class="form-outline mb-4">
+            <label  class="form-label">Type</label>
+            <select id="user_typeInput" class="form-select">
+              <option value="" selected disabled hidden>Choose here</option>
+              <option id="Food">Food</option>
+              <option id="Lodging">Lodging</option>
+              <option id="Travel">Travel</option>
+              <option id="Other">Other</option>
+
+            </select>
+          </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" >Description</label>
+
+          <textarea class="form-control" id="user_descriptionInput" rows="4"></textarea>
+        </div>
+      
+
+        <!-- Submit button -->
+        <button id="submit" type="submit" class="btn btn-1">submit</button>
+      </form>
+<script src="./createReimbursement.js"></script>
+  
+</body>
+</html>
